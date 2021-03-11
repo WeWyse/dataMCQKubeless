@@ -2,7 +2,7 @@ def getQuestionAndCaptureAnswer(table, column):
   import mysql.connector
 
 
-  connector = mysql.connector.connect(host="http://172.17.0.3:8085/api/v1/qcm_test",
+  connector = mysql.connector.connect(host="http://host:8085/api/v1/qcm_test",
                                       user="admin", password="admin",
                                       database="dataMCQ")
 
