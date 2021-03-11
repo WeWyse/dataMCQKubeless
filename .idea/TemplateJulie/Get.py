@@ -11,11 +11,15 @@ def GetDataFromMySQL(table, column):
   rows = cursor.fetchall()
   number = 1
   for row in rows:
-    print('question ', number, ' : ', row)
+    print('question ', number, ' : ', row[0])
     number = number + 1
+    print('Réponse A :', row[1])
+    print('Réponse B :', row[2])
+    print('Réponse C :', row[3])
+    print('Réponse D :', row[4])
 
+  res = "X"
+# attraper reponse
 
-
-# Opérations à réaliser sur la base ...
-conn.close()
-return
+  conn.close()
+  return res
