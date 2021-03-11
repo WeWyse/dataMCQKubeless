@@ -8,6 +8,7 @@ def getQuestionAndCaptureAnswer(table, column):
 
   cursor = connector.cursor()
   query = ("""SELECT %s FROM %s """ %(', '.join(column),table))
+  cursor.execute(query)
   rows = cursor.fetchall()
   number = 1
   for row in rows:
