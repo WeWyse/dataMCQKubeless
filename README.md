@@ -13,9 +13,9 @@ sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 ## Deploy Kubeless
 
 ```
-export $REALEASE=v1.0.8
+export REALEASE=v1.0.8
 kubectl create ns kubeless
-kubectl create -f https://github.com/kubeless/kubeless/releases/download/$RELEASE/kubeless-$RELEASE.yaml
+kubectl create -f https://github.com/kubeless/kubeless/releases/download/v1.0.8/kubeless-v1.0.8.yaml
 ```
 
 
