@@ -1,4 +1,4 @@
-def GetDataFromMySQL(table, column):
+def getQuestionAndCaptureAnswer(table, column):
   import mysql.connector
 
 
@@ -18,7 +18,7 @@ def GetDataFromMySQL(table, column):
     print('Réponse C :', row[3])
     print('Réponse D :', row[4])
 
-  res = "X"
+  res = str(input())
 # attraper reponse
 
   conn.close()
